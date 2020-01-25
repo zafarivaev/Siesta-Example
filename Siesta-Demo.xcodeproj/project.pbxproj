@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1C2B552C23DC4AC400C5DFCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B552B23DC4AC400C5DFCC /* AppDelegate.swift */; };
 		1C2B552E23DC4AC400C5DFCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B552D23DC4AC400C5DFCC /* SceneDelegate.swift */; };
-		1C2B553023DC4AC400C5DFCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B552F23DC4AC400C5DFCC /* ViewController.swift */; };
+		1C2B553023DC4AC400C5DFCC /* HolidaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B552F23DC4AC400C5DFCC /* HolidaysViewController.swift */; };
 		1C2B553323DC4AC400C5DFCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2B553123DC4AC400C5DFCC /* Main.storyboard */; };
 		1C2B553523DC4AC500C5DFCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2B553423DC4AC500C5DFCC /* Assets.xcassets */; };
 		1C2B553823DC4AC500C5DFCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2B553623DC4AC500C5DFCC /* LaunchScreen.storyboard */; };
+		1CC3A17723DC664A003ACD17 /* HolidaysAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC3A17623DC664A003ACD17 /* HolidaysAPI.swift */; };
+		7C6E359FB68AFB37FD9B91B4 /* Pods_Siesta_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9ED80C9F8276A10CD8B543 /* Pods_Siesta_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C2B552823DC4AC400C5DFCC /* Siesta-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Siesta-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2B552B23DC4AC400C5DFCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C2B552D23DC4AC400C5DFCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C2B552F23DC4AC400C5DFCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C2B552F23DC4AC400C5DFCC /* HolidaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysViewController.swift; sourceTree = "<group>"; };
 		1C2B553223DC4AC400C5DFCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C2B553423DC4AC500C5DFCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C2B553723DC4AC500C5DFCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C2B553923DC4AC500C5DFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC3A17623DC664A003ACD17 /* HolidaysAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysAPI.swift; sourceTree = "<group>"; };
+		AF9ED80C9F8276A10CD8B543 /* Pods_Siesta_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siesta_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE822EBA474B6B2C48A56771 /* Pods-Siesta-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siesta-Demo.release.xcconfig"; path = "Target Support Files/Pods-Siesta-Demo/Pods-Siesta-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		C29F0487C6B7DC17F27EAAD4 /* Pods-Siesta-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siesta-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Siesta-Demo/Pods-Siesta-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C6E359FB68AFB37FD9B91B4 /* Pods_Siesta_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C03B0DCE2B255C0F2F4F2BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C29F0487C6B7DC17F27EAAD4 /* Pods-Siesta-Demo.debug.xcconfig */,
+				BE822EBA474B6B2C48A56771 /* Pods-Siesta-Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1C2B551F23DC4AC400C5DFCC = {
 			isa = PBXGroup;
 			children = (
 				1C2B552A23DC4AC400C5DFCC /* Siesta-Demo */,
 				1C2B552923DC4AC400C5DFCC /* Products */,
+				0C03B0DCE2B255C0F2F4F2BB /* Pods */,
+				28A6E54ED603C00B140C7EEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +74,40 @@
 		1C2B552A23DC4AC400C5DFCC /* Siesta-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				1C2B552B23DC4AC400C5DFCC /* AppDelegate.swift */,
-				1C2B552D23DC4AC400C5DFCC /* SceneDelegate.swift */,
-				1C2B552F23DC4AC400C5DFCC /* ViewController.swift */,
+				1CC3A17823DC6650003ACD17 /* App */,
+				1CC3A17623DC664A003ACD17 /* HolidaysAPI.swift */,
+				1C2B552F23DC4AC400C5DFCC /* HolidaysViewController.swift */,
 				1C2B553123DC4AC400C5DFCC /* Main.storyboard */,
+				1C92207623DC729200A38489 /* Supporting Files */,
+			);
+			path = "Siesta-Demo";
+			sourceTree = "<group>";
+		};
+		1C92207623DC729200A38489 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				1C2B553423DC4AC500C5DFCC /* Assets.xcassets */,
 				1C2B553623DC4AC500C5DFCC /* LaunchScreen.storyboard */,
 				1C2B553923DC4AC500C5DFCC /* Info.plist */,
 			);
-			path = "Siesta-Demo";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CC3A17823DC6650003ACD17 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1C2B552B23DC4AC400C5DFCC /* AppDelegate.swift */,
+				1C2B552D23DC4AC400C5DFCC /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		28A6E54ED603C00B140C7EEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF9ED80C9F8276A10CD8B543 /* Pods_Siesta_Demo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C2B553C23DC4AC500C5DFCC /* Build configuration list for PBXNativeTarget "Siesta-Demo" */;
 			buildPhases = (
+				82EE217DFF5DEE4B2C46490C /* [CP] Check Pods Manifest.lock */,
 				1C2B552423DC4AC400C5DFCC /* Sources */,
 				1C2B552523DC4AC400C5DFCC /* Frameworks */,
 				1C2B552623DC4AC400C5DFCC /* Resources */,
+				1991D391F879B76CC2CB6C3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +178,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1991D391F879B76CC2CB6C3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siesta-Demo/Pods-Siesta-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siesta-Demo/Pods-Siesta-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Siesta-Demo/Pods-Siesta-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82EE217DFF5DEE4B2C46490C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Siesta-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C2B552423DC4AC400C5DFCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C2B553023DC4AC400C5DFCC /* ViewController.swift in Sources */,
+				1C2B553023DC4AC400C5DFCC /* HolidaysViewController.swift in Sources */,
 				1C2B552C23DC4AC400C5DFCC /* AppDelegate.swift in Sources */,
 				1C2B552E23DC4AC400C5DFCC /* SceneDelegate.swift in Sources */,
+				1CC3A17723DC664A003ACD17 /* HolidaysAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +370,12 @@
 		};
 		1C2B553D23DC4AC500C5DFCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29F0487C6B7DC17F27EAAD4 /* Pods-Siesta-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJWVGRX9VD;
-				INFOPLIST_FILE = "Siesta-Demo/Info.plist";
+				INFOPLIST_FILE = "Siesta-Demo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +389,12 @@
 		};
 		1C2B553E23DC4AC500C5DFCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE822EBA474B6B2C48A56771 /* Pods-Siesta-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJWVGRX9VD;
-				INFOPLIST_FILE = "Siesta-Demo/Info.plist";
+				INFOPLIST_FILE = "Siesta-Demo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
