@@ -3,7 +3,7 @@ import Siesta
 
 class HolidaysViewController: UIViewController {
  
-    var tasks: [String] = []
+    var holidays: [String] = []
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
