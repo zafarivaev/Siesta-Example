@@ -24,7 +24,7 @@ extension HolidaysViewController: ResourceObserver {
             .compactMap { $0 as? [String: Any] }
             .compactMap { $0["name"] as? String }
         
-        self.tasks = holidays
+        self.holidays = holidays
         self.tableView.reloadData()
     }
 }
@@ -33,12 +33,12 @@ extension HolidaysViewController: ResourceObserver {
 extension HolidaysViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tasks.count
+        return holidays.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "holidayCell")!
-        cell.textLabel?.text = tasks[indexPath.row]
+        cell.textLabel?.text = holidays[indexPath.row]
         return cell
     }
     
