@@ -30,7 +30,7 @@ extension HolidaysViewController: ResourceObserver {
 }
 
 
-extension HolidaysViewController: UITableViewDelegate, UITableViewDataSource {
+extension HolidaysViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return holidays.count
